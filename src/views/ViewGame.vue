@@ -80,7 +80,7 @@ export default {
       if (res.msg) {
         return next(vm => vm.setError(res.msg))
       }
-      next(vm => vm.setData(res.gameData))
+      next(vm => vm.setData(res))
     }).catch((err) => {
       console.error(err)
     })
